@@ -124,21 +124,30 @@ a {
   align-items: center;
 }
 
+.contacts_container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
 .contacts_title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 52px;
   text-align: center;
   color: #fff;
+  margin-bottom: 62px;
 }
 
 .link {
+  display: block;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
   color: #fff;
   display: flex;
   align-items: baseline;
+  cursor: pointer;
 }
 
 .svg_container {
@@ -157,6 +166,10 @@ a {
 
 .watsapp {
   background-image: url(assets/watsapp.png);
+}
+
+.linkedin {
+  background-color: #4D76A1;
 }
 
 /*contacts end*/
