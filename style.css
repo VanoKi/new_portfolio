@@ -1,8 +1,16 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
 *{
   box-sizing: border-box;
   /* border: 1px red solid; */
   margin: 0 auto;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -13,15 +21,25 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
+
+a {
+  text-decoration: none;
+}
+
 
 .wrap {
   width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/*header start*/
 
 .header_wrap {
   display: flex;
-  /* gap: 60px; */
 }
 
 .image_container {
@@ -63,6 +81,7 @@ header {
 }
 
 .btn {
+  display: block;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -70,4 +89,74 @@ header {
   color: #fff;
   text-align: center;
   line-height: 48px;
+  cursor: pointer;
 }
+
+/*header end*/
+
+/*portfolio start*/
+
+.portfolio {
+  width: 970px;
+}
+
+.portfolio_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+  color: #000;
+}
+
+/*portfolio ens*/
+
+/*contacts start*/
+
+.footer_wrap {
+  width: 1440px;
+  height: 428px;
+  border-radius: 100px 0 0 0;
+  background: #252525;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+}
+
+.svg_container {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.telegram {
+  background-color: #039BE5;
+}
+
+.watsapp {
+  background-image: url(assets/watsapp.png);
+}
+
+/*contacts end*/
