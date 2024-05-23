@@ -16,7 +16,7 @@ html {
 
 header {
   border-radius: 0 0 100px 0;
-  width: 1440px;
+  max-width: 1440px;
   height: 630px;
   background: linear-gradient(158deg, #2f2f2f 0%, #202020 100%);
   display: flex;
@@ -31,7 +31,7 @@ a {
 
 
 .wrap {
-  width: 1170px;
+  max-width: 1170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +41,7 @@ a {
 
 .header_wrap {
   display: flex;
+  gap: 70px;
 }
 
 .image_container {
@@ -107,6 +108,29 @@ a {
   font-size: 52px;
   text-align: center;
   color: #000;
+  margin-bottom: 60px;
+}
+
+.item {
+  display: grid;
+  place-items: center;
+}
+
+.portfolio_img {
+  max-width: 970px;
+  height: 450px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+.item h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #000;
 }
 
 /*portfolio end*/
@@ -114,7 +138,7 @@ a {
 /*contacts start*/
 
 .footer_wrap {
-  width: 1440px;
+  max-width: 1440px;
   height: 428px;
   border-radius: 100px 0 0 0;
   background: #252525;
