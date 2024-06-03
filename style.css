@@ -122,7 +122,8 @@ a {
 
 .portfolio_img {
   max-width: 970px;
-  height: 450px;
+  /* height: 450px; */
+  height: auto;
   margin-bottom: 30px;
   border-radius: 30px;
 }
