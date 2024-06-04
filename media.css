@@ -13,7 +13,7 @@
 
   .titles_container {
     margin-left: auto;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
 
   .btn {
@@ -55,8 +55,25 @@
   }
 
   .contacts_title {
-    font-size: 30px;
+    font-size: 24px;
   }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .contacts_container {
+    margin-bottom: 0px;
+  }
+
+  .portfolio_title {
+    font-size: 28px;
+  }
+
+  .portfolio h3 {
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width: 362px) {
