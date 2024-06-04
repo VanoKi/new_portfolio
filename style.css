@@ -16,7 +16,7 @@ html {
 }
 
 header {
-  border-radius: 0 0 100px 0;
+  border-radius: 0 0 30px 30px;
   max-width: 1440px;
   height: 630px;
   background: linear-gradient(158deg, #2f2f2f 0%, #202020 100%);
@@ -145,7 +145,7 @@ a {
 .footer_wrap {
   max-width: 1440px;
   height: 428px;
-  border-radius: 100px 0 0 0;
+  border-radius: 30px 30px 0 0;
   background: #252525;
   margin-top: 80px;
   display: flex;
