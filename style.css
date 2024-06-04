@@ -97,6 +97,12 @@ a {
   cursor: pointer;
 }
 
+.btn:hover {
+  border: 1px solid #3b3b3b;
+  border-radius: 8px;
+  background-color: #3b3b3b;
+}
+
 /*header end*/
 
 /*portfolio start*/
