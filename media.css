@@ -53,6 +53,10 @@
   .btn {
     font-size: 24px;
   }
+
+  .contacts_title {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 362px) {
