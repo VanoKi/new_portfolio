@@ -8,6 +8,7 @@
   /* border: 1px red solid; */
   margin: 0 auto;
   padding: 0;
+  transition: .3s;
 }
 
 *:hover {
@@ -139,6 +140,11 @@ a {
   height: auto;
   margin-bottom: 30px;
   border-radius: 30px;
+  cursor: pointer;
+}
+
+.portfolio_img:hover {
+
 }
 
 .item h3 {
