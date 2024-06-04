@@ -42,7 +42,16 @@
 
 @media (max-width: 600px) {
   .image_container {
-    max-width: 90vw;
+    /* max-width: 90vw; */
+    display: none;
+  }
+
+  .titles_container {
+    height: 320px;
+    border-radius: 30px;
+    background-image: url(assets/photo@2x.png);
+    background-position: center;
+    background-size: cover;
   }
 
   .main-title {
