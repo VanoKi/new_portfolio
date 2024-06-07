@@ -117,6 +117,10 @@ a {
 
 .portfolio {
   max-width: 970px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio_title {
@@ -166,6 +170,19 @@ a {
 h3 a:hover {
   border: 1px solid #f1f1f3;
   border-radius: 8px;
+  background-color: #f1f1f3;
+}
+
+.btn_more {
+  display: block;
+  padding: 15px;
+  border: 1px solid #E4E4E7;
+  cursor: pointer;
+}
+
+.btn_more:hover {
+  border: 1px solid #f1f1f3;
+  border-radius: 15px;
   background-color: #f1f1f3;
 }
 
