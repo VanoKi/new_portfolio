@@ -1,9 +1,11 @@
-// function screen($url, $extn, $size, $format) 
-// {
-//     $url = 'http://mini.s-shot.ru/'.$extn.'/'.$size.'/'.$format.'/?'.urlencode($url);
-//     $str = file_get_contents($url);
-//     file_put_contents('screen.'.$format, $str); // тут лучше указать путь куда сохранять
-// }
-
-// screen('http://hashcode.ru', '1024x768', '600', 'jpeg');
+import {data} from './data.js'
+let start = 3
+let part = data.slice(0, start)
+for (const i of part) {
+  document.querySelector('.container').innerHTML = `
+    <div class="item">
+      <img class="portfolio_img" src="${part[i].image}" alt="Caffee_preview">
+      <h3><a href="${part[i].url}">Coffee House Landing page</a></h3>
+    </div>`
+}
 
