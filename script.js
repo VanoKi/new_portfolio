@@ -21,3 +21,4 @@ function loadItems() {
 }
 moreBtn.addEventListener('click', loadItems)
 loadItems()
+
