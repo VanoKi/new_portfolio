@@ -261,3 +261,64 @@ h3 a:hover {
 }
 
 /*contacts end*/
+
+/*pop-up start*/
+
+.pop-up {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #E4E4E7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up__site-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+  color: #000;
+}
+
+.pop-up__description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #555;
+}
+
+.pop-up__url {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+}
+
+.back {
+  width: 50%;
+  height: 80px;
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 80px;
+  color: #000;
+  cursor: pointer;
+}
+
+/*pop-up end*/
