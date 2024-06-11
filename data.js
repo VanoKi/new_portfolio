@@ -5,7 +5,7 @@ export const data = [
     "url": "https://vanoki.github.io/Coffee-house/",
     "description": "landing page of Coffee House created by Ivan Kirshchin",
     "image": "assets/preview/coffee-prev2.jpg",
-    "layout": ""
+    "layout": "assets/mark-ups/[D] Home.png"
   },
   {
     "title": "Cozy House",
