@@ -13,7 +13,7 @@ export const data = [
     "url": "https://vanoki.github.io/Cozy-house/shelter/pages/main/index.html",
     "description": "two-page website for an animal shelter in Boston",
     "image": "assets/preview/cozy-prev3.jpg",
-    "layout": ""
+    "layout": "assets/mark-ups/main-1280.png"
   },
   {
     "title": "Burger House",
@@ -21,7 +21,7 @@ export const data = [
     "url": "https://vanoki.github.io/burgers-intensive/",
     "description": "burger website with order form",
     "image": "assets/preview/burger3.jpg",
-    "layout": ""
+    "layout": "assets/mark-ups/Burger.png"
   },
   {
     "title": "Coffee House",

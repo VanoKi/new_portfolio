@@ -15,10 +15,17 @@ function loadItems() {
   document.querySelector('.container').innerHTML += block
   currInd += itemsPerPage
 
+  const container = document.querySelector('.container')
+  const items = container.querySelectorAll('.portfolio_img')
+  items.forEach(item => {
+    item.addEventListener('click', (event) => {
+      console.log(event);
+    })
+  })
+
   if (currInd >= data.length){
     moreBtn.style.display = 'none'
   }
 }
 moreBtn.addEventListener('click', loadItems)
 loadItems()
-
