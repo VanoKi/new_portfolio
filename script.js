@@ -32,14 +32,35 @@ function loadItems() {
 moreBtn.addEventListener('click', loadItems)
 loadItems()
 
+// function findItems(targ) {
+//   for (let i = 0; i < data.length; i++) {
+//     if (targ === data[i].image) {
+//       let item = data[i];
+//       console.log(item['site-name']);
+//       console.log(item['description']);
+//       console.log(item['title']);
+//       console.log(item['image']);
+//       break
+//     }
+//   }
+// }
+
 function findItems(targ) {
   for (let i = 0; i < data.length; i++) {
     if (targ === data[i].image) {
       let item = data[i];
-      console.log(item['site-name']);
-      console.log(item['description']);
-      console.log(item['title']);
-      console.log(item['image']);
+      document.querySelector('body').innerHTML = `
+      <div class="pop-up">
+        <h2 class="pop-up__site-name">${item['site-name']}</h2>
+        <p class="pop-up__description">${item['description']}</p>
+        <a class="pop-up__url" href="${item['url']}">${item['title']}</a>
+        <div class="pop-up__image-container">
+          <img class="pop-up__img" src="${item['layout']}" alt="">
+        </div>
+        <div class="back">back to main</div>
+      </div>
+      `
+      break
     }
   }
 }
