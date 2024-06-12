@@ -49,7 +49,7 @@ function findItems(targ) {
   for (let i = 0; i < data.length; i++) {
     if (targ === data[i].image) {
       let item = data[i];
-      document.querySelector('body').innerHTML = `
+      document.querySelector('body').insertAdjacentHTML("afterbegin", `
       <div class="pop-up">
         <h2 class="pop-up__site-name">${item['site-name']}</h2>
         <p class="pop-up__description">${item['description']}</p>
@@ -59,7 +59,7 @@ function findItems(targ) {
         </div>
         <div class="back">back to main</div>
       </div>
-      `
+      `)
       break
     }
   }
