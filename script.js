@@ -19,7 +19,9 @@ function loadItems() {
   const items = container.querySelectorAll('.portfolio_img')
   items.forEach(item => {
     item.addEventListener('click', (event) => {
-      console.log(event.target);
+      const str = event.target.src
+      // console.log(str.slice(str.indexOf('a')));
+      findItems(str.slice(str.indexOf('a')))
     })
   })
 
@@ -29,3 +31,15 @@ function loadItems() {
 }
 moreBtn.addEventListener('click', loadItems)
 loadItems()
+
+function findItems(targ) {
+  for (let i = 0; i < data.length; i++) {
+    if (targ === data[i].image) {
+      let item = data[i];
+      console.log(item['site-name']);
+      console.log(item['description']);
+      console.log(item['title']);
+      console.log(item['image']);
+    }
+  }
+}
