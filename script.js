@@ -2,6 +2,7 @@ import {data} from './data.js'
 let currInd = 0
 let itemsPerPage = 3
 const moreBtn = document.querySelector('.btn_more')
+const back = document.querySelector('.back')
 
 function loadItems() {
   const part = data.slice(currInd, currInd + itemsPerPage)
@@ -32,19 +33,6 @@ function loadItems() {
 moreBtn.addEventListener('click', loadItems)
 loadItems()
 
-// function findItems(targ) {
-//   for (let i = 0; i < data.length; i++) {
-//     if (targ === data[i].image) {
-//       let item = data[i];
-//       console.log(item['site-name']);
-//       console.log(item['description']);
-//       console.log(item['title']);
-//       console.log(item['image']);
-//       break
-//     }
-//   }
-// }
-
 function findItems(targ) {
   for (let i = 0; i < data.length; i++) {
     if (targ === data[i].image) {
@@ -59,7 +47,10 @@ function findItems(targ) {
         </div>
         <div class="back">back to main</div>
       </div>
-      `)
+      `);
+      document.querySelector('.back').addEventListener('click', () => {
+        document.querySelector('.pop-up').remove();
+      })
       break
     }
   }
