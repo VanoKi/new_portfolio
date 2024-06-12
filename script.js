@@ -19,7 +19,7 @@ function loadItems() {
   const items = container.querySelectorAll('.portfolio_img')
   items.forEach(item => {
     item.addEventListener('click', (event) => {
-      console.log(event);
+      console.log(event.target);
     })
   })
 
