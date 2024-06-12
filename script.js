@@ -3,6 +3,7 @@ let currInd = 0
 let itemsPerPage = 3
 const moreBtn = document.querySelector('.btn_more')
 const back = document.querySelector('.back')
+const body = document.querySelector('body')
 
 function loadItems() {
   const part = data.slice(currInd, currInd + itemsPerPage)
@@ -23,7 +24,7 @@ function loadItems() {
       const str = event.target.src
       // console.log(str.slice(str.indexOf('a')));
       findItems(str.slice(str.indexOf('a')));
-      document.querySelector('body').classList.toggle('no-scroll')
+      body.classList.toggle('no-scroll')
     })
   })
 
@@ -51,7 +52,7 @@ function findItems(targ) {
       `);
       document.querySelector('.back').addEventListener('click', () => {
         document.querySelector('.pop-up').remove();
-        document.querySelector('body').classList.toggle('no-scroll')
+        body.classList.toggle('no-scroll')
       })
       break
     }
