@@ -22,7 +22,8 @@ function loadItems() {
     item.addEventListener('click', (event) => {
       const str = event.target.src
       // console.log(str.slice(str.indexOf('a')));
-      findItems(str.slice(str.indexOf('a')))
+      findItems(str.slice(str.indexOf('a')));
+      document.querySelector('body').classList.toggle('no-scroll')
     })
   })
 
@@ -50,6 +51,7 @@ function findItems(targ) {
       `);
       document.querySelector('.back').addEventListener('click', () => {
         document.querySelector('.pop-up').remove();
+        document.querySelector('body').classList.toggle('no-scroll')
       })
       break
     }
