@@ -1,3 +1,4 @@
+console.log('data.js loaded');
 export const data = [
   {
     "title": "Coffee House",
