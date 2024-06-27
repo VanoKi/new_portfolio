@@ -13,7 +13,9 @@ function loadItems() {
   for (let index = 0; index < part.length; index++) {
     block += `
     <div class="item">
-      <img class="portfolio_img" src="${part[index].image}" alt="Caffee_preview">
+      <div class="portfolio_img_wrap">
+        <img class="portfolio_img" src="${part[index].image}" alt="Caffee_preview">
+      </div>
       <h3><a href="${part[index].url}">${part[index]['site-name']}</a></h3>
     </div>`
   }

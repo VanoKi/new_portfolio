@@ -148,10 +148,17 @@ a {
   margin-bottom: 30px;
   border-radius: 30px;
   cursor: pointer;
+  transition: filter .4s ease;
+  filter: brightness(90%);
+}
+
+.portfolio_img_wrap {
+  position: relative;
+  display: inline-block;
 }
 
 .portfolio_img:hover {
-  
+  filter: brightness(100%);
 }
 
 .item h3 {
