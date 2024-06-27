@@ -190,6 +190,12 @@ h3 a:hover {
   cursor: pointer;
 }
 
+.btn_more h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+}
+
 .btn_more:hover {
   border: 1px solid #f1f1f3;
   border-radius: 100px;
