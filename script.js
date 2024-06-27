@@ -4,10 +4,10 @@ let itemsPerPage = 3
 const moreBtn = document.querySelector('.btn_more')
 // const back = document.querySelector('.back')
 const body = document.querySelector('body')
-console.log('selectors initialized');
+// console.log('selectors initialized');
 
 function loadItems() {
-  console.log('loading items..');
+  // console.log('loading items..');
   const part = data.slice(currInd, currInd + itemsPerPage)
   let block = ``
   for (let index = 0; index < part.length; index++) {
@@ -19,16 +19,17 @@ function loadItems() {
   }
   document.querySelector('.container').innerHTML += block
   currInd += itemsPerPage
-  console.log('items loaded');
+  // console.log('items loaded');
 
   const container = document.querySelector('.container')
   const items = container.querySelectorAll('.portfolio_img')
   items.forEach(item => {
     item.addEventListener('click', (event) => {
-      console.log('item clicked');
+      // console.log('item clicked');
       const str = event.target.src
-      // console.log(str.slice(str.indexOf('a')));
-      findItems(str.slice(str.indexOf('a')));
+      // console.log(str);
+      // console.log(str.slice(str.indexOf('assets')));
+      findItems(str.slice(str.indexOf('assets')));
       body.classList.add('no-scroll')
     })
   })
@@ -41,7 +42,7 @@ moreBtn.addEventListener('click', loadItems)
 loadItems()
 
 function findItems(targ) {
-  console.log('finding items');
+  // console.log('finding items');
   for (let i = 0; i < data.length; i++) {
     if (targ === data[i].image) {
       let item = data[i];
@@ -56,7 +57,7 @@ function findItems(targ) {
         <div class="back">back to main</div>
       </div>
       `);
-      console.log('pop-up created');
+      // console.log('pop-up created');
       document.querySelector('.back').addEventListener('click', () => {
         document.querySelector('.pop-up').remove();
         body.classList.remove('no-scroll')
