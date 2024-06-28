@@ -192,7 +192,7 @@ h3 a:hover {
 
 .btn_more h3 {
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
 }
 
@@ -331,6 +331,11 @@ h3 a:hover {
   height: 55%;
   margin-bottom: 40px;
   border-radius: 15px;
+}
+
+.pop-up__image-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 .pop-up__img {
